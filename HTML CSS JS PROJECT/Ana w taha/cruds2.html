@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cruds.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="cruds">
+        <div class="btnx" > 
+            <button id="back1" onclick="window.location.href = 'cruds.html';" ><i class="uil uil-step-backward"></i>  Back</button><button id="next1" onclick="window.location.href = 'cruds2.html';">Next <i class="uil uil-skip-forward"></i>
+            </button></div>
+            <div class="head">
+                <h1>Cruds</h1>
+                <p>PRODUCT MANAGEMENT PROJECT</p>
+            </div>
+            <div class="inputss">
+                <input type="text" placeholder="typo of " id="type">
+                <input type="number" placeholder="amount" id="amnt">
+                <button id="add"><i class="uil uil-plus"></i>ADD<i class="uil uil-plus"></i></button>
+            </div>
+            <table>
+               
+                <tr>
+                    <th>TYPE</th>
+                    <th>PRICE</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+
+                <tbody>
+                    <tr>
+                        <td>ESSENCE</td>
+                        <td>120</td>
+                        <td><button >Update</button></td>
+                        <td><button id="mss7">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    
+</body>
+<script src="cruds.js"></script>
+</html>

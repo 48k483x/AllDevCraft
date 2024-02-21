@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Auth</title>
+</head>
+<body>
+    
+</body>
+        <script>
+            
+            axios.post('https://reqres.in/api/login', 
+    {
+            "email": "eve.holt@reqres.in",
+            "password": "cityslicka"
+    })
+        .then(function (response) {
+            let token = response.data.token;
+            localStorage.setItem('token', token);
+            console.log('token Received ' + token);
+            CreateNewUser()
+    });
+
+    function CreateNewUser() {
+        let token = localStorage.getItem('token');
+        let config = {
+            headers: {
+                Authorization: `Bearer ${token}`,
+  }
+  }
+            axios.post('https://reqres.in/api/user', {
+                "name": "ABDU",
+                "job": "SEMI PROG"
+            }, config)
+            .then(function (response) {
+               console.log(response)
+            });
+    }
+        </script>
+</html>

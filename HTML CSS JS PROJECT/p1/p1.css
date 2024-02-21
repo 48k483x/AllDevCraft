@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.x {
+     width: 100%;
+     height: 100vw;
+     background-image: url(/akdzn1.jpg);
+     background-position: center;
+     background-size: cover;
+     padding: 10px 10%;
+     overflow: hidden;
+     position:relative;
+   }
+  
+   .x nav  {
+    display: flex;
+    padding: 10px ;
+    align-items: center;
+    justify-content: space-between;
+    
+   }
+
+    .x nav .lg{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-weight: 700;
+   } 
+   .x nav ul li{
+   display: inline-block;
+    list-style:none ;
+    margin: 10px ;
+    margin-top: 30px;
+    font-weight: 600;
+    
+    
+   }
+   .x nav ul li a{
+    color: aliceblue;
+   }
+   .c{
+    padding-right: 200px;
+    font-weight: 500;
+    margin-top: 20px;
+    
+   }
+   .l-btn{
+    color: aliceblue;
+   }
+   .d-btn{
+    display: inline-block;
+    padding: 14px 40px;
+   
+    color: aliceblue;
+    background-image: linear-gradient(45deg, #003cff , #d9ff00);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: all .4s ease-in-out;
+   }
+
+   .content{
+    margin-top: 10%;
+    max-width: 600px;
+    color: aliceblue;
+   }
+   .content h1{
+    font-size: 70px;
+    color: aliceblue;
+   }
+   .content p{
+    margin: 10px 0 30px;
+    font-weight: 600;
+    color: #d9ff00;
+    animation-delay: 0.5s;
+   
+   }
+   .content .d-btn{
+    padding: 15px 80px;
+    font-size:16px ;
+    animation-delay: 1s;
+   }
+   .d-btn:hover{
+    
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    margin: 10px;
+    height: 25px;
+    text-align:center;
+    border: none;
+    background-size: 100% 100%;
+    border-top-right-radius: 30px;
+   }
+
+   .cr7{
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    margin-bottom: 750px;
+    margin-right: 200px;
+    
+    
+   }
+    
+
+   .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation:moveup 0.5s linear forwards ;
+   }
+    .cr7.anim{
+        animation-delay: 1.5s;
+    }
+   @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+   }

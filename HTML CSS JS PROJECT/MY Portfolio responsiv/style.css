@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/fifa-welcome');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none  ;
+    box-sizing: border-box;
+}
+.pic img{
+    max-width: 590px;
+    position: absolute;
+    bottom: 0;
+}
+
+.section{
+    width: 200px;
+    height: 4vh;
+    border-radius: 50px;
+    rotate: 90deg;
+    margin-top: 300px ;
+   float: right;
+}

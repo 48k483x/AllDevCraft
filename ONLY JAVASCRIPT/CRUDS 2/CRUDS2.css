@@ -1,0 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: 0;
+    font-family: 'Akira Expanded', sans-serif;                                               
+}
+body{
+    background-color: #222;
+    color: white;
+}
+
+.all_cruds_project{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    text-align: center;
+    margin: 20px 0;
+}
+input{
+    width: 100%;
+    background: #111;
+    border: none;
+    border-radius: 6px;
+    padding: 18px 8px;
+    color: white;
+    margin: 5px;
+    transition: 0.2s ease;
+    font-size: 1rem;
+}
+input:focus{
+    transform: scale(1.1);
+    border: 0;
+    outline: 0;
+}
+.prices{
+    display: flex;
+    gap: 20px;
+}
+button{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    background-color: rgb(37, 47, 187);
+    color: white;
+    border: 0;
+    transition: 0.2s ease;
+
+}
+button:hover{
+    background-color: rgb(108, 119, 233);
+    color: rgb(230, 229, 229);
+    letter-spacing: 0.1rem;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#total{
+    background-color: red;
+}
+#total::before{
+    content: 'total: ';
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+#btn-tit{
+    width: 45%;
+}
+#btn-cat{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 ;
+}
+td,th{
+    padding: 5px;
+}
+#deletalll{
+    margin: 20px 0;
+    background: red;
+}
+#deletalll:hover{
+    background: rgb(252, 80, 80);
+}
+#total{
+    border-radius: 5px;
+    padding: 15px 6px;
+    font-size: 1rem;
+}

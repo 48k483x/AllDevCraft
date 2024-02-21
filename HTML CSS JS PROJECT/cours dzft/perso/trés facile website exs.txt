@@ -1,0 +1,62 @@
+"""
+trés facile exeercice 60 59 53
+etudiants = {
+    "etudiant-1": 13,
+     "etudiant-2": 7.5,
+     "etudiant-3": 15,
+     "etudiant-4": 6.5,
+     "etudiant-5": 9,
+     "etudiant-6": 16,
+     "etudiant-7": 14,
+     "etudiant-8": 17,
+     "etudiant-9": 13,
+     "etudiant-10": 5,
+     "etudiant-11": 18,
+     "etudiant-12": 5.5,
+     "etudiant-13": 20,
+     "etudiant-14": 6,
+     "etudiant-15": 3.75,
+     "etudiant-16": 7,
+     "etudiant-17": 14,
+     "etudiant-18": 15,
+     "etudiant-19": 17,
+     "etudiant-20": 19,
+}
+oui = {}
+non = {}
+for x in etudiants:
+     if etudiants[x] >= 10:
+          oui[x] = etudiants [x]
+     else :
+          non[x] = etudiants[x]
+
+print(oui)
+print(non)
+print("le nombre des etudiants qui ont validé", len(oui))
+print("le nombre des etudiants qui n'ont pas validé", len(non))
+"""
+"""
+dict = {}
+chaine = input("entrer une chaine")
+for i in chaine:
+    dict[i] = chaine.count(i)
+print(dict)
+
+print("there is " ,len(dict), "item in the dictionary")
+print("there is " ,len(chaine), "character in chaine")
+print(type(dict))
+print(type(chaine))
+"""
+dict = {}
+liste = []
+n = int(input("liste's lenght : "))
+for i in range(n):
+    m = int(input("entrer un nombre : "))
+    liste.append(m)
+for j in liste:
+    if j % 2 == 0:
+        dict[j] = "premier"
+    else:
+        dict[j] = "non premier"
+print(liste)
+print(dict)

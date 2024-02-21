@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CRUDS2.css">
+    <title>CRUDS 2</title>
+</head>
+<body>
+
+
+   <div class="all_cruds_project">
+        <div class="header">
+            <h1>CRUDS</h1>
+            <p>PRODUCT MANAGEMENT PROJECT</p>
+        </div>
+
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div class="prices">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="tax" placeholder="Taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="dis" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="create">Create</button>
+        </div>
+        
+        <div class="outputs">
+            <input type="text" id="search" placeholder="Search">
+            <div class="btns">
+                <button id="btn-tit">Search By title</button>
+                <button id="btn-cat">search by category</button>
+        </div>
+        </div>
+            <div id="deletall"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>CATEGORY</th>
+                    <th>total</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+
+                </tr>
+
+                <tbody id="tbody">
+                
+                </tbody>
+            </table>
+   </div>
+
+
+    
+</body>
+<script src="CRUDS2.js"></script>
+</html>

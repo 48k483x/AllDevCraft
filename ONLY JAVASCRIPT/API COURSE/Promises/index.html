@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Promises</title>
+</head>
+<body>
+    <h3 style="visibility: hidden;" id="title1">Title1</h3>
+    <h3 style="visibility: hidden;" id="title2">Title2</h3>
+    <h3 style="visibility: hidden;" id="title3">Title3</h3>
+    <h3 style="visibility: hidden;" id="title4">Title4</h3>
+</body>
+
+    <script>
+        // Not Promise Methode
+        //setTimeout(()=>{
+        //    document.getElementById('title1').style.visibility = 'visible';
+        //        setTimeout(()=>{
+        //            document.getElementById('title2').style.visibility = 'visible';
+        //                setTimeout(()=>{
+        //                   document.getElementById('title3').style.visibility = 'visible';
+        //                         setTimeout(()=>{
+        //                             document.getElementById('title4').style.visibility = 'visible';
+        //                       },1000);
+        //                },1000);
+        //        },1000);
+        //},1000);
+        //
+        // //Not Promise Methode//
+
+
+    //   const myPromise = new Promise((resolve, reject)=>{
+    //        setTimeout(()=>{
+    //           document.getElementById('title1').style.visibility = 'visible';
+    //            resolve('manza eeroor cas')
+    //        },1000)
+    //      
+    //    }).then(()=>{
+    //       return  new Promise((resolve)=>{
+    //        setTimeout(()=>{
+    //            document.getElementById('title2').style.visibility = 'visible';
+    //            resolve()
+    //        },1000)
+    //       })
+    //    }).then(()=>{
+    //        return  new Promise((resolve)=>{
+    //        setTimeout(()=>{
+    //            document.getElementById('title3').style.visibility = 'visible';
+    //            resolve()
+    //        },1000)
+    //       })
+    //    }).then(()=>{
+    //        return  new Promise((resolve)=>{
+    //        setTimeout(()=>{
+    //            document.getElementById('title4').style.visibility = 'visible';
+    //            resolve()
+    //       },1000)
+    //       })
+    //    })
+        
+        async function getTitles() {
+           await  new Promise((resolve)=>{
+           setTimeout(()=>{
+               document.getElementById('title1').style.visibility = 'visible';
+               resolve()
+           },1000)})
+             
+           
+           await  new Promise((resolve)=>{
+           setTimeout(()=>{
+               document.getElementById('title2').style.visibility = 'visible';
+               resolve()
+           },1000)
+          })
+
+          await  new Promise((resolve)=>{
+            setTimeout(()=>{
+                document.getElementById('title3').style.visibility = 'visible';
+                resolve()
+            },1000)
+           })
+
+           setTimeout(()=>{
+                document.getElementById('title4').style.visibility = 'visible';
+            },1000)
+
+        }
+ 
+          
+    
+         
+        getTitles()
+         
+ 
+
+
+
+
+    </script>
+
+</html>

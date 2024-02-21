@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    scroll-behavior: smooth;
+}
+
+
+.first{
+    background:  #dae0f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* set the height to the viewport height */
+}
+
+.top{
+    width: 300px;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #aa7ae0;
+    box-shadow: 0px 0px 20px rgba(0,0,255,0.15);
+    margin-bottom: 20px; /* add a margin between the items */
+}
+
+#bottom{
+    width: 300px;
+    height: 35vh;
+    background: #FFF;
+    margin-top: 20px; /* add a margin between the items */
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+    border-radius: 2px;
+    overflow: auto; /* add overflow property to contain content within the section */
+}
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+#sc{
+    height: 5vh;
+    width: 290px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.1s ease ;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+   
+    
+
+    
+}
+
+#sc:hover{
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.30);
+    background: #dae0f5;
+    transform: scale(1.1);
+}
+.btn{
+    border-radius: 50px;
+    margin-top: -5px;
+    z-index: 1;
+    text-align: center;
+}
+#cl{
+    background: #aa7ae0;
+    color: #fff;
+    font-weight: 600;
+    width: 150px;
+    height: 6vh;
+    border-radius: 50px;
+    margin-top: -30px;
+    transition: 0.1s ease;
+}
+#cl:focus{
+    transform: scale(1.1);
+}
+
+#edit{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+#delete{
+    height: 25px;
+    width: 25px;
+    
+}

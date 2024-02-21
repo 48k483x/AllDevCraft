@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+        <nav class="navbar">
+            <a href="#" class="logo">DROZON</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="act">Home</a></li>
+                    <li><a href="#">Infos</a></li>
+                    <li><a href="#">Adventures</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <img src="menu-btn.png" class="m-h">
+        </nav>
+        <header></header>
+
+    
+</body>
+<script>
+    const menuHamburger = document.querySelector(".m-h")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('m-m')
+        })
+</script>
+</html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Noto+Nastaliq+Urdu:wght@400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+body{
+    background-image: url(/Vintage\ Blue\ Background\ Textura\ Material\ H5\ \(1\).jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.cc{
+   width: 350px;
+   height: 390px;
+   margin-top: 200px;
+   margin-left: 550px;
+   background-color: rgb(208, 232, 252);
+   border-radius: 12px;
+   
+    
+}
+.hh{
+    margin-top: 55px
+}
+input{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    margin-top: 40px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-width: 3px;
+    border-color: #000;
+    box-sizing: border-box;
+    margin-left: 55px;
+    
+}
+.fa-solid{
+    color: #000;
+    font-weight: 1000;
+}
+.fa-user{
+     transform: translateX(45px) translateY(7px);
+     
+}
+.inpuut{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    margin-top: 40px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-width: 3px;
+    border-color: #000;
+    box-sizing: border-box;
+    margin-left: 66px;
+    
+}
+
+.fa-lock{
+    transform: translateX(-278px) translateY(75px);
+}
+.buttons {
+    margin: 1%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.gg{
+    font-size: 15px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.gg a{
+    font-size: 13px;
+    margin-right: 10px;
+    
+}

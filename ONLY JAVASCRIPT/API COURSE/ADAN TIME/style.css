@@ -1,0 +1,55 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#Container{
+    width: 100vw;
+    background: linear-gradient(#2b134a , #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Glass-Container{
+    width: 85%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: 115px;
+
+}
+#select-section{
+    padding: 20px;
+}
+
+.Times-day{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Day-Times{
+    width: 200px;
+    border-radius: 5px;
+    height: 130px;
+    background: #ffff32;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    flex-grow: 1;
+    flex-basis: 200px;
+    
+}
+
+

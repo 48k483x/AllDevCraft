@@ -1,0 +1,61 @@
+<HTML>
+    <HEAD>
+    <TITLE>Connexion à 'nininin'</TITLE></HEAD>
+    <SCRIPT LANGUAGE="JavaScript">
+    function Login(){
+    var done=0;
+    var username=document.login.username.value;
+    var password=document.login.password.value;
+    
+    if (username=="dev104" && password=="abdu") {
+    window.location="ps.html";
+    }
+    
+    if (username=="user2" && password=="user2") {
+    window.location="exemple15.html";
+    }
+    
+    if (username == "user3" && password == "user3") {
+    window.location="user3.html";
+    }
+    
+    if (username == "user4" && password == "user4") {
+    window.location="user4.html";
+    }
+    
+    if (username=="vous" && password=="vous") { 
+    // Vous pouvez réservez une page pour vous même(options, etc.)
+    window.location="vous.html";
+
+    }
+    if (username!="dev104" || password!="abdu") {
+        alert('ERREUR DE MOT DE PASSE OU ERREUR DE LOGIN');
+
+    }
+    
+    }
+    </SCRIPT>
+    
+    
+    <BODY>
+    
+    
+        <CENTER>
+    <FORM name=login>
+    <TABLE width=400 border=2 cellpadding=4>
+    <tr><td colspan=2><CENTER><FONT
+    size="+2"><b>Connexion</b></FONT></CENTER></td></tr>
+    <tr><td>Pseudo:</td><td><input type=text name=username></td></tr>
+    <tr><td> Mot de passe   :  </td><td><input type=PASSWORD name=password></td></tr>
+    <tr><td colspan=2 align=center><input type=button value="Connextion!" onclick="Login()"></td></tr>
+    </TABLE>
+    </FORM>
+   </CENTER>
+   
+
+
+
+
+
+</BODY>
+    </HTML>

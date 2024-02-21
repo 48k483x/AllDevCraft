@@ -1,0 +1,258 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akira Expanded', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: auto;
+}
+
+.hd{
+    width: 100%;
+    height: 40vh;
+    background: rgb(23, 174, 23);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hd .acc{
+    position: absolute;
+    left: 1px;
+    margin-left: 20px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hd .acc img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.acc p{
+    font-size: 0.6rem;
+    position: relative;
+    left: 60px;
+    bottom: 35px;
+    color: rgba(255, 255, 255, 0.774);
+}
+.acc h1{
+    font-size: 1rem;
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    color: #fff;
+
+}
+.hd .search-bar{
+    position: relative;
+    top: 40px;
+    
+    
+}
+.search-bar input {
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.678);
+    padding: 10px 10px;
+}
+.ii{
+    position: relative;
+    left: 325px;
+    top: 39px;
+    font-size: 1.6rem;
+}
+.box-card{
+    height: 31vh;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    margin-left: 5%;
+    border-radius: 5px;
+    filter: drop-shadow(0px  0px 4px #000);
+    transform: translateY(-60px);
+    
+    
+
+}
+
+.box-card i {
+    color: rgb(23, 174, 23);
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
+.dv p{
+font-size: 0.6rem;
+color: #000;
+
+
+
+
+}
+.dv{
+    display: flex;
+    float: left;
+    margin-left: 10%;
+    padding: 20px 0 ;
+}
+.xxv{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(90deg , #dcf2e5,white );
+    justify-content: center;
+    text-align: center;
+    border-top: 3px solid rgb(23, 174, 23);
+    border-bottom: 3px solid rgb(23, 174, 23);
+    border-right: 3px solid rgb(23, 174, 23);
+    
+
+}
+.loub{
+    height: 25vh;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 5px;
+    filter: drop-shadow(0px  0px 4px #000);
+    background-image: url(/téléchargement\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buttons {
+    position: relative;
+    top: 120px;
+    left: 80px;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #ffffff, #e9f0e1, #d9f086, #ebf1d0);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.barox{
+    width:100% ;
+    height:7.5vh;
+    background: white;
+    filter: drop-shadow(0px 0px 4px rgb(0, 0, 0));
+    position: sticky;
+    bottom: 0px;
+}
+.btn{
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn i{
+    font-size: 1.6rem;
+}
+.btn .hm i p{
+    font-size: 0.6rem;
+}
+.hm{
+   text-align: center;
+   margin-left: 13px;
+   width: 50px;
+   height: 50px;
+   transition: 0.5s ease;
+   border-radius: 50%;
+   
+}
+.hm:hover{
+    transform: scale(0.95);
+    background: linear-gradient(90deg , #dcf2e5,white );
+}
+.th-sec{
+    width: 90%;
+    height: 20vh;
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    
+}
+.th-sec img{
+    border-radius: 10px;
+    position: relative;
+    top: 16px;
+    width: 130px;
+}
+.th-sec p{
+    font-size: 0.5rem;
+    margin-top: 50px;
+    margin-left: 10px;
+    marg
+}
+.xbtn{
+    width: 170px;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    left: -80px;
+    font-size: 0.6rem;
+    border-radius: 50px;
+    border-color: green;
+}
+.pp{
+    position: relative;
+    top: 80px;
+    right: 150px;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+  .lt{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lt p{
+    width: 40%;
+    margin: 10px 0;
+  }
+  .lt a {
+    width: 40%;
+    margin: 20px 0;
+  }
+
+
+

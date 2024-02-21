@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>API</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <div style="display: flex; align-items: center;justify-content: center;flex-direction: column;" id="content">
+        Hello Abdurrahman
+    </div>
+    
+</body>
+    <script>
+       
+       
+       // GET A New Post
+        function GetPost(){
+            let request = new XMLHttpRequest();
+            request.open("GET" , "https://jsonplaceholder.typicode.com/posts");
+            request.send();
+            request.responseType = "json";
+            request.onload = ()=>{
+            let posts =  request.response;
+            for(post of posts){
+                document.getElementById("content").innerHTML += `<h1>${post.title}</h1>`
+            }
+            }
+        }
+
+        //Create New Post
+        function CreatePost(){
+            let request = new XMLHttpRequest();
+            request.open("POST" , "https://jsonplaceholder.typicode.com/posts");
+            request.setRequestHeader("Accept", "application/json");
+            request.setRequestHeader("Content-Type", "application/json");
+            let bodyparams = `
+                {
+                    "title": "Manza",
+                    "body": "illaguis",
+                    "userId": 1
+                }
+            `
+            request.send(bodyparams); 
+            request.onload = () => {
+                if(request.status >= 200 && request.status < 300){
+                    let response = request.response;
+                    console.log(response);
+                    console.log('The Status Code: ' + request.status);
+                    alert('The Post was successfully Created');  
+                }else{alert('Error: ' + request.status);}
+            }
+
+        }
+
+     //Update Post
+        function EditPost(){
+            let request = new XMLHttpRequest();
+            request.open("PUT" , "https://jsonplaceholder.typicode.com/posts/1");
+            request.setRequestHeader("Accept", "application/json");
+            request.setRequestHeader("Content-Type", "application/json");
+            let bodyparams = `
+                {
+                    "title": "hello world",
+                    "body": "illaguis",
+                    "userId": 1
+                }
+            `
+            request.send(bodyparams); 
+            request.onload = () => {
+                if(request.status >= 200 && request.status < 300){
+                    let response = request.response;
+                    console.log(response);
+                    console.log('The Status Code: ' + request.status);
+                    alert('The Post was successfully Updated');  
+                }else{alert('Error: ' + request.status);}
+            }
+        }
+
+        // Delete Postz
+        function DeletePost(){
+            let request = new XMLHttpRequest();
+            request.open("DELETE" , "https://jsonplaceholder.typicode.com/posts/1");
+            request.setRequestHeader("Accept", "application/json");
+            request.setRequestHeader("Content-Type", "application/json");
+            request.send(); 
+            request.onload = () => {
+                if(request.status >= 200 && request.status < 300){
+                    let response = request.response;
+                    console.log(response);
+                    console.log('The Status Code: ' + request.status);
+                    alert('The Post was successfully Deleted');  
+                }else{alert('Error: ' + request.status);}
+            }
+        }
+        
+
+        // GET A New Post For Specific User
+        function GetPostForSpecificUser(){
+            let request = new XMLHttpRequest();
+            request.open("GET" , "https://jsonplaceholder.typicode.com/posts?userId=5");
+            request.send();
+            request.responseType = "json";
+            request.onload = ()=>{
+                    if(request.status >= 200 && request.status < 300){
+                        let posts =  request.response;
+                        for(post of posts){
+                        document.getElementById("content").innerHTML += `<p>${post.title}</p>`
+                    }
+                }else{alert("Error")}
+            }
+        }GetPostForSpecificUser()
+    </script>
+</html>

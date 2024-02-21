@@ -1,0 +1,13 @@
+.imgs img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.imgs img:hover{
+    border: 2px solid green;
+}
+.main img{
+    width: 810px;
+    height: 810px;
+    border-radius: 6px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+                
+    <title>DIGITAL CLOCK</title>
+</head>
+<body>
+    <main class="h-screen w-screen" style="background: rgb(0,0,0);background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(21,1,64,1) 100%);background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(21,1,64,1) 100%); display: flex; justify-content: center; align-items: center;">
+        <div style="height: 170px; width: 500px;align-items: center; border-radius: 6px;box-shadow: 0px 0px 6px 1px rgba(21,1,64,1);-webkit-box-shadow: 0px 0px 6px 1px rgba(21,1,64,1);-moz-box-shadow: 0px 0px 6px 1px rgba(21,1,64,1); "  class="bg-black">
+            <div class="h-full w-full" style="display: flex; justify-content: center;align-items: center;font-family: 'Akira Expanded', sans-serif;font-size: 2.75rem; ">
+                <div id="hours" style="color: #0eeae2;margin: 10px;">15</div>
+                <h1 style="color: #0eeae2;">:</h1>
+                <div id="minutes" style="color: #0eeae2;margin: 10px;">04</div>
+                <h1 style="color: #0eeae2;margin: 10px;">:</h1>
+                <div id="seconds" style="color: #0eeae2;margin: 10px;">66</div>
+                <h1 style="color: #0eeae2;margin: 10px;">:</h1>
+                <div id="ampm" style="color: #0eeae2;margin: 10px;">PM</div>
+                
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script>
+    const hours = document.getElementById("hours");
+    const minutes = document.getElementById("minutes");
+    const seconds = document.getElementById("seconds");
+    const ampml = document.getElementById("ampm");
+
+    function Clock(){
+        let h = new Date().getHours();
+        let m = new Date().getMinutes();
+        let s = new Date().getSeconds();
+        
+        h = h<10? '0'+ h :h;
+        s =s<10? '0'+ s :s;
+        m =m<10? '0'+ m :m;
+        let result = h > 12 ? ampml.innerHTML = 'PM' : ampml.innerHTML ='AM' ; 
+
+        hours.innerHTML = h;
+        minutes.innerHTML = m;
+        seconds.innerHTML = s;
+        setTimeout(Clock , 1000);
+       
+    }
+    Clock()
+    
+</script>
+</html>

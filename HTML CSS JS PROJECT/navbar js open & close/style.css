@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 120px;
+    height: 100vh;
+    background-color: red;
+}
+.container p{
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+button{
+    font-weight: 800;
+    background-color:red ;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+#close{
+    position: absolute;
+    left: 128px;
+}
+.container p:hover , button:hover{
+    background-color: #000;
+}
+
+.hide{
+    display: none;
+}

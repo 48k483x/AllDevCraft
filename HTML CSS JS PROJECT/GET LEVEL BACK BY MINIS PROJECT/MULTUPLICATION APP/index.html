@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>MULTUPLICATION APP</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <main class="h-screen w-screen bg-yellow-400" >
+        <div class="flex justify-center items-center h-full w-full ">
+            <div class="w-96 h-64 bg-white rounded-lg shadow-white-500 p-4">
+                <div class="flex flex-row-reverse">
+                    <h1 id="score" class="font-bold p-4">0</h1><h1 class="font-bold p-4">SCORE  : </h1>
+                </div>
+                <center><h1 id="question" class="p-4" style="font-family: 'Akira Expanded', sans-serif;">WHAT IS 2 MUTIPLY 3 ?</h1></center>
+                <center><input id="answer" class="w-80 h-10 border-2 border-yellow-500 rounded p-4 " style="text-align: center;font-size: 1.6rem;" type="text" placeholder="ENTER YOUR ANSWER"></center>
+                <center><button <button id="submit" class="rounded-full bg-yellow-500 w-80 p-1.5 m-5 text-lg font-bold">Save Changes</button></center>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+    const score    = document.getElementById("score");
+    const answer   = document.getElementById("answer");
+    const submit   = document.getElementById("submit");
+    const question = document.getElementById("question");
+    const num1 = Math.ceil(Math.random()*10);
+    const num2 = Math.ceil(Math.random()*10);
+    const result = num1 * num2;
+    
+    console.log(num1);
+    let k = JSON.parse(localStorage.getItem("score"));
+    score.innerHTML = k;
+    question.innerHTML = 'What is '+ num1 + ' Multiply by '+ num2;
+    
+    submit.onclick = () =>{
+       if(+answer.value === result ) {
+        k++
+        localstorage()
+       }else{
+        k--
+        localstorage()
+       }
+       if(!k){
+        k = 0;
+    }
+       location.reload();
+    }
+
+    function localstorage(){
+        localStorage.setItem("score", JSON.stringify(k));
+    }
+</script>
+</html>

@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Wed Oct  4 15:27:43 2023
+Invocation: foremost -i PurpleThing.jpeg 
+Output directory: /mnt/c/Users/abder/Desktop/AllDevCraft/CTF/CTFlearn/output
+Configuration file: /home/linuxbrew/.linuxbrew/etc/foremost.conf
+------------------------------------------------------------------
+File: PurpleThing.jpeg
+Start: Wed Oct  4 15:27:43 2023
+Length: 160 KB (164802 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.png 	     149 KB 	          0 	  (780 x 720)
+1:	00000299.png 	      11 KB 	     153493 	  (802 x 118)
+Finish: Wed Oct  4 15:27:43 2023
+
+2 FILES EXTRACTED
+	
+png:= 2
+------------------------------------------------------------------
+
+Foremost finished at Wed Oct  4 15:27:43 2023

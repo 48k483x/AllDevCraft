@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WC2022</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Boostrap / css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Boostrap / JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--  Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        font-family: 'Almarai', sans-serif;
+    }
+    .bg-primary{
+        background-color: #811538 !important;
+        color: white;
+    }
+    .bg-secondary{
+        background-color: #5b0d25 !important;
+        color: white;
+    }
+    #header-bg{
+        background-image: url(/assets.png);
+    }
+    #header{
+        clip-path: polygon(0 0, 100% 0%, 100% 99%, 0 80%);
+        border-bottom: solid 20px #5b0d25;
+
+    }
+    #logo-Header{
+        position: absolute;
+        z-index: 100;
+        left: 100px;
+        top: 60px;
+    }
+    .logo-img{
+        height: 300px;
+        filter: drop-shadow(5px 5px 30px #e01250);
+    }
+    #hd-qu{
+        position: absolute;
+        z-index: 200;
+        right: 100px;
+        top: 210px;
+    }
+</style>
+<body>
+    <!--  Logo-Header   -->
+    <div id="logo-Header">
+        <img src="/logo.png" alt="" class="logo-img">
+    </div>
+    <!--  Logo-Header   -->
+
+
+
+    <!--  Quarter   -->
+    <div id="hd-qu"  style="font-size:50px; margin-right:100px; color: #ff004c; font-family: 'La Belle Aurore', cursive;">
+        <h1 style="font-weight: 900;">Quart Final</h1>
+    </div>
+    <!--  Quarter   -->
+    
+
+
+
+    <!--  Header   -->
+    <div id="header" style="height: 20rem;" class="bg-primary"> 
+        <div id="header-bg" style="width: 100%; height:100%; ">
+            <div  class="p-5"   style="direction: rtl; font-size:50px; margin-right:100px; color:white;">
+                <h1 style="font-size: 70px; font-weight:800;">كأس</h1>
+                <h1 style="font-size: 90px; font-weight:800;">العالم</h1>
+            </div>
+        </div>
+    </div>
+    <!--  Header   -->
+
+    <!--  Qatar 2022   -->
+    <div class="d-flex justify-content-center" style="margin-top: 30px;">
+         <img src="/qatar-word.png" style="width: 400px;">
+    </div>
+    <!--  Qatar 2022   -->
+
+
+    <!--  Main Content   -->
+    <div class="container " style="margin-top:50px;">
+    
+        <!--  STANDINGS   -->
+         <div class="p-5 mt-1">
+                <!--  Title Row  -->
+                <div class="row" style="direction: rtl; ">
+                        <h1><b>المجموعات</b></h1><hr>
+                </div>
+                <!--  Title Row  -->
+
+                <!--  Standings Row  -->
+                <div class="row" id="standings">
+                    
+
+                    <!--  Standings COL  -->
+                    <div class="col-sm-6 mb-4">
+                        <div class="card shadow border-none">
+                            <div class="card-header bg-primary" style="text-align: center;">
+                              <b>Group (A)</b>
+                            </div>
+
+
+                            <div class="row m-0 bg-secondary">
+                                <div class="col-sm-4" style="text-align: center;">team</div>
+                                <div class="col-sm-2" style="text-align: center;">W</div>
+                                <div class="col-sm-2" style="text-align: center;">L</div>
+                                <div class="col-sm-2" style="text-align: center;">D</div>
+                                <div class="col-sm-2" style="text-align: center;">Pts</div>
+                            </div>
+
+                           
+                            <!--  TEAMS  -->
+                                <ul class="list-group list-group-flush">
+                                    
+                                    <!--  TEAM  1  -->
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                    <span class="flag">
+                                                        <img class="rounded-circle" style="height: 40px; width:40px;" src="https://wallpaperaccess.com/full/3840661.jpg" alt="">
+                                                    </span>
+                                                    <h5 style="margin: auto 4px;"> <b>MAR</b> </h5>
+                                                </div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                            </div>
+                                        </li>
+                                    <!--  TEAM  1  -->
+
+                                     <!--  TEAM  2  -->
+                                     <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                <span class="flag">
+                                                    <img class="rounded-circle" style="height: 40px; width:40px;" src="https://cdn.britannica.com/06/6206-004-14730C28/Flag-Croatia.jpg" alt="">
+                                                </span>
+                                                <h5 style="margin: auto 4px;"> <b>CRO</b> </h5>
+                                            </div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                        </div>
+                                    </li>
+                                <!--  TEAM  2  -->
+
+                                 <!--  TEAM  3  -->
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                            <span class="flag">
+                                                <img class="rounded-circle" style="height: 40px; width:40px;" src="https://www.worldatlas.com/r/w425/upload/95/0c/25/flag-of-belgium-1830-svg.png" alt="">
+                                            </span>
+                                            <h5 style="margin: auto 4px;"> <b>BLG</b> </h5>
+                                        </div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                    </div>
+                                </li>
+                            <!--  TEAM  3  -->
+
+                             <!--  TEAM  4  -->
+                             <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                        <span class="flag">
+                                            <img class="rounded-circle" style="height: 40px; width:40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px;"> <b>CND</b> </h5>
+                                    </div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                </div>
+                            </li>
+                        <!--  TEAM  4  -->
+                                    
+                                    
+                                </ul>
+                            <!--  TEAMS  -->    
+                          </div>
+                          
+                    </div>
+                    <!--  Standings COL  -->
+
+
+                       <!--  Standings COL  -->
+                       <div class="col-sm-6 mb-4">
+                        <div class="card shadow border-none">
+                            <div class="card-header bg-primary" style="text-align: center;">
+                              <b>Group (A)</b>
+                            </div>
+
+
+                            <div class="row m-0 bg-secondary">
+                                <div class="col-sm-4" style="text-align: center;">team</div>
+                                <div class="col-sm-2" style="text-align: center;">W</div>
+                                <div class="col-sm-2" style="text-align: center;">L</div>
+                                <div class="col-sm-2" style="text-align: center;">D</div>
+                                <div class="col-sm-2" style="text-align: center;">Pts</div>
+                            </div>
+
+                           
+                            <!--  TEAMS  -->
+                                <ul class="list-group list-group-flush">
+                                    
+                                    <!--  TEAM  1  -->
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                    <span class="flag">
+                                                        <img class="rounded-circle" style="height: 40px; width:40px;" src="https://wallpaperaccess.com/full/3840661.jpg" alt="">
+                                                    </span>
+                                                    <h5 style="margin: auto 4px;"> <b>MAR</b> </h5>
+                                                </div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                            </div>
+                                        </li>
+                                    <!--  TEAM  1  -->
+
+                                     <!--  TEAM  2  -->
+                                     <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                <span class="flag">
+                                                    <img class="rounded-circle" style="height: 40px; width:40px;" src="https://cdn.britannica.com/06/6206-004-14730C28/Flag-Croatia.jpg" alt="">
+                                                </span>
+                                                <h5 style="margin: auto 4px;"> <b>CRO</b> </h5>
+                                            </div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                        </div>
+                                    </li>
+                                <!--  TEAM  2  -->
+
+                                 <!--  TEAM  3  -->
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                            <span class="flag">
+                                                <img class="rounded-circle" style="height: 40px; width:40px;" src="https://www.worldatlas.com/r/w425/upload/95/0c/25/flag-of-belgium-1830-svg.png" alt="">
+                                            </span>
+                                            <h5 style="margin: auto 4px;"> <b>BLG</b> </h5>
+                                        </div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                    </div>
+                                </li>
+                            <!--  TEAM  3  -->
+
+                             <!--  TEAM  4  -->
+                             <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                        <span class="flag">
+                                            <img class="rounded-circle" style="height: 40px; width:40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px;"> <b>CND</b> </h5>
+                                    </div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                </div>
+                            </li>
+                        <!--  TEAM  4  -->
+                                    
+                                    
+                                </ul>
+                            <!--  TEAMS  -->    
+                          </div>
+                          
+                    </div>
+                    <!--  Standings COL  -->
+
+
+                       <!--  Standings COL  -->
+                       <div class="col-sm-6 mb-4">
+                        <div class="card shadow border-none">
+                            <div class="card-header bg-primary" style="text-align: center;">
+                              <b>Group (A)</b>
+                            </div>
+
+
+                            <div class="row m-0 bg-secondary">
+                                <div class="col-sm-4" style="text-align: center;">team</div>
+                                <div class="col-sm-2" style="text-align: center;">W</div>
+                                <div class="col-sm-2" style="text-align: center;">L</div>
+                                <div class="col-sm-2" style="text-align: center;">D</div>
+                                <div class="col-sm-2" style="text-align: center;">Pts</div>
+                            </div>
+
+                           
+                            <!--  TEAMS  -->
+                                <ul class="list-group list-group-flush">
+                                    
+                                    <!--  TEAM  1  -->
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                    <span class="flag">
+                                                        <img class="rounded-circle" style="height: 40px; width:40px;" src="https://wallpaperaccess.com/full/3840661.jpg" alt="">
+                                                    </span>
+                                                    <h5 style="margin: auto 4px;"> <b>MAR</b> </h5>
+                                                </div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                            </div>
+                                        </li>
+                                    <!--  TEAM  1  -->
+
+                                     <!--  TEAM  2  -->
+                                     <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                <span class="flag">
+                                                    <img class="rounded-circle" style="height: 40px; width:40px;" src="https://cdn.britannica.com/06/6206-004-14730C28/Flag-Croatia.jpg" alt="">
+                                                </span>
+                                                <h5 style="margin: auto 4px;"> <b>CRO</b> </h5>
+                                            </div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                        </div>
+                                    </li>
+                                <!--  TEAM  2  -->
+
+                                 <!--  TEAM  3  -->
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                            <span class="flag">
+                                                <img class="rounded-circle" style="height: 40px; width:40px;" src="https://www.worldatlas.com/r/w425/upload/95/0c/25/flag-of-belgium-1830-svg.png" alt="">
+                                            </span>
+                                            <h5 style="margin: auto 4px;"> <b>BLG</b> </h5>
+                                        </div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                    </div>
+                                </li>
+                            <!--  TEAM  3  -->
+
+                             <!--  TEAM  4  -->
+                             <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                        <span class="flag">
+                                            <img class="rounded-circle" style="height: 40px; width:40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px;"> <b>CND</b> </h5>
+                                    </div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                </div>
+                            </li>
+                        <!--  TEAM  4  -->
+                                    
+                                    
+                                </ul>
+                            <!--  TEAMS  -->    
+                          </div>
+                          
+                    </div>
+                    <!--  Standings COL  -->
+
+
+
+
+                       <!--  Standings COL  -->
+                       <div class="col-sm-6 mb-4">
+                        <div class="card shadow border-none">
+                            <div class="card-header bg-primary" style="text-align: center;">
+                              <b>Group (A)</b>
+                            </div>
+
+
+                            <div class="row m-0 bg-secondary">
+                                <div class="col-sm-4" style="text-align: center;">team</div>
+                                <div class="col-sm-2" style="text-align: center;">W</div>
+                                <div class="col-sm-2" style="text-align: center;">L</div>
+                                <div class="col-sm-2" style="text-align: center;">D</div>
+                                <div class="col-sm-2" style="text-align: center;">Pts</div>
+                            </div>
+
+                           
+                            <!--  TEAMS  -->
+                                <ul class="list-group list-group-flush">
+                                    
+                                    <!--  TEAM  1  -->
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                    <span class="flag">
+                                                        <img class="rounded-circle" style="height: 40px; width:40px;" src="https://wallpaperaccess.com/full/3840661.jpg" alt="">
+                                                    </span>
+                                                    <h5 style="margin: auto 4px;"> <b>MAR</b> </h5>
+                                                </div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                                    <div class="col-sm-2" style="text-align: center;">0</div>
+                                            </div>
+                                        </li>
+                                    <!--  TEAM  1  -->
+
+                                     <!--  TEAM  2  -->
+                                     <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                                <span class="flag">
+                                                    <img class="rounded-circle" style="height: 40px; width:40px;" src="https://cdn.britannica.com/06/6206-004-14730C28/Flag-Croatia.jpg" alt="">
+                                                </span>
+                                                <h5 style="margin: auto 4px;"> <b>CRO</b> </h5>
+                                            </div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                                <div class="col-sm-2" style="text-align: center;">0</div>
+                                        </div>
+                                    </li>
+                                <!--  TEAM  2  -->
+
+                                 <!--  TEAM  3  -->
+                                 <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                            <span class="flag">
+                                                <img class="rounded-circle" style="height: 40px; width:40px;" src="https://www.worldatlas.com/r/w425/upload/95/0c/25/flag-of-belgium-1830-svg.png" alt="">
+                                            </span>
+                                            <h5 style="margin: auto 4px;"> <b>BLG</b> </h5>
+                                        </div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                            <div class="col-sm-2" style="text-align: center;">0</div>
+                                    </div>
+                                </li>
+                            <!--  TEAM  3  -->
+
+                             <!--  TEAM  4  -->
+                             <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                        <span class="flag">
+                                            <img class="rounded-circle" style="height: 40px; width:40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/1200px-Flag_of_Canada_%28Pantone%29.svg.png" alt="">
+                                        </span>
+                                        <h5 style="margin: auto 4px;"> <b>CND</b> </h5>
+                                    </div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                        <div class="col-sm-2" style="text-align: center;">0</div>
+                                </div>
+                            </li>
+                        <!--  TEAM  4  -->
+                                    
+                                    
+                                </ul>
+                            <!--  TEAMS  -->    
+                          </div>
+                          
+                    </div>
+                    <!--  Standings COL  -->
+
+                    
+                </div>
+                <!--  Standings Row  -->
+                
+
+         </div>
+        <!--  STANDINGS   -->
+
+    </div>
+    <!--  Main Content   -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+
+<script>
+    const token = "f7f7e16cdcb746c380db85c2ad10a776"
+    const baseUrl = "https://api.football-data.org/v4/competitions/2000"
+    
+    
+    function getStandings()
+    {
+        const url = `${baseUrl}/standings`
+        
+
+        axios.get(url, {
+            headers: {
+                "X-Auth-Token": token
+            }
+        })
+        .then((response) => {
+            
+            const standings = response.data.standings
+            document.getElementById("standings").innerHTML = ""
+
+            for(standing of standings)
+            {
+                let tableContent = ""
+                for(row of standing.table)
+                    tableContent+=`
+                    <!--  TEAM  1  -->
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-sm-4 d-flex justify-content-center align-items-center " style="text-align: center;">
+                                <span class="flag">
+                                    <img class="rounded-circle " style="height: 40px; width:40px;object-fit:cover;" src="${row.team.crest}" alt="">
+                                </span>
+                                <h5 style="margin: auto 4px;"> <b>${row.team.tla}</b> </h5>
+                            </div>
+                                <div class="col-sm-2" style="text-align: center;">  ${row.won}     </div>
+                                <div class="col-sm-2" style="text-align: center;">  ${row.lost}    </div>
+                                <div class="col-sm-2" style="text-align: center;">  ${row.draw}    </div>
+                                <div class="col-sm-2" style="text-align: center;">  ${row.points}  </div>
+                        </div>
+                    </li>
+                <!--  TEAM  1  -->
+                    `
+
+                    const content = `
+                    
+                    <!--  Standings COL  -->
+                    <div class="col-sm-6 mb-4">
+                        <div class="card shadow border-none">
+                            <div class="card-header bg-primary" style="text-align: center;">
+                              <b>${standing.group}</b>
+                            </div>
+
+
+                            <div class="row m-0 bg-secondary">
+                                <div class="col-sm-4" style="text-align: center;">team</div>
+                                <div class="col-sm-2" style="text-align: center;">W</div>
+                                <div class="col-sm-2" style="text-align: center;">L</div>
+                                <div class="col-sm-2" style="text-align: center;">D</div>
+                                <div class="col-sm-2" style="text-align: center;">Pts</div>
+                            </div>
+
+                           
+                            <!--  TEAMS  -->
+                                <ul class="list-group list-group-flush">
+                                    
+                                   ${tableContent}
+                                    
+                                </ul>
+                            <!--  TEAMS  -->    
+                          </div>
+                          
+                    </div>
+                    <!--  Standings COL  -->
+                    `
+                    document.getElementById("standings").innerHTML += content
+                }
+        })
+    }
+
+        getStandings()
+</script>
+</html>
